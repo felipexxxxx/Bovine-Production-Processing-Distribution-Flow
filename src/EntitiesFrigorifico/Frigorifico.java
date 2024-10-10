@@ -24,12 +24,12 @@ public class Frigorifico implements EntitiesGerais.IProdutos, EntitiesGerais.ICl
     }
     @Override
     public void comprar(Boi boi){
-        if(lucroTotal < 4500){
+        if(lucroTotal < 4400){
             System.out.println("boi comprado:\n"+ boi.getNumeracao());
             boisVivos.add(boi);
         }  else{
             System.out.println("boi comprado:\n"+ boi.getNumeracao());
-            lucroTotal -= 4500;
+            lucroTotal -= 4400;
             boisVivos.add(boi);
         }
         
